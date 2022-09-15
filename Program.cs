@@ -7,6 +7,7 @@ string[] favoriteFoods = { "Pizza", "Pasta", "Gelato", "Sushi", "Kebab","Hamburg
 Console.WriteLine("la classifica e' lunga : " + favoriteFoods.Length + " elementi");
 Console.WriteLine("La classifica consiste in:");
 for (int i = 0; i < favoriteFoods.Length; i++) {
+    Console.Write( i + 1 +"-");
     Console.WriteLine(favoriteFoods[i]);
 }
 //cibo preferito

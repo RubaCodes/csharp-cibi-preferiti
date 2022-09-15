@@ -14,5 +14,9 @@ Console.WriteLine("Il mio cibo preferito e': "+ favoriteFoods[0]);
 //cibo preferito (ma non troppo) ultima posizione della classifica
 Console.WriteLine("Il mio cibo meno e': "+ favoriteFoods[favoriteFoods.Length -1]);
 //cibo di meta'
-int midIndex = Convert.ToInt32(Math.Floor(((double)favoriteFoods.Length - 1) / 2));
-Console.WriteLine("Il mio cibo di meta' classifica e':" + favoriteFoods[midIndex]);
+if(favoriteFoods.Length % 2 == 0) {
+    Console.WriteLine("Le due mediane sono:" + favoriteFoods[(favoriteFoods.Length-1)/2] + " e "+ favoriteFoods[favoriteFoods.Length / 2]);
+}
+else {
+    Console.WriteLine("La mediana e' :" + favoriteFoods[(favoriteFoods.Length-1)/2]);
+}
